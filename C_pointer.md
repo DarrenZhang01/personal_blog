@@ -44,23 +44,37 @@ printf("equal: %d\n", b[0] == 'a');
 2.char array不可以做字符字面量的整体更改而char pointer可以轻松的更改
 
 a = "want to change and succeed!"
+
 b = "want to change but fail!"
+
 1
+
 2
+
 a对，b错并且b会给出编译时错误(compile error)
 3. char pointer 不可通过下标index做某个字符的单独修改，因为constant module中的字符串字面量是只读的。但char array可以。简单的理解就是a的字符串还是别人的，你不能动，但是对b来说我已经有一份自己的字符串了，我想咋动咋动
 
+
 a[0] = 'b'; // Fail
+
 b[0] = 'a'; // OK
+
 1
+
 2
+
 a不会给出编译时错误compile error，但是运行时会给出run time error - bus error，因为我们试图去修改只读变量 
 4.char pointer可以做指针运算(pointer arithmetic)，而char array不行
 
+
 a++; //OK
+
 b++; //Fail
+
 1
+
 2
+
 a的本质是一个指针，你可以任意改变它的位置通过改变它的数值，当我们做自增一运算的时候，指针会自动移动到constant module里string literal第二个字符的位置，也就是在原地址的基础上加一个char的size。而b的本质是一个数组，所以你不能随意更改b的指向。
 
 
