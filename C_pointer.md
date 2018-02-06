@@ -3,11 +3,17 @@
 首先回顾一下C语言的内存机制(memory model):
 
 Code
+
 Global Variable
+
 Stack
+
 Constant
+
 Heap
+
 Operating System
+
 先说指针的声明，假设现在有赋值语句如下(Assignment Statement)
 
 char *a = "this is a string literal!";
