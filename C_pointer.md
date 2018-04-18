@@ -1,5 +1,6 @@
 # C 语言指针和数组究竟有什么不同
-# The difference between pointer and array in C
+## (The difference between pointer and array in C)
+
 C语言指针(pointer)是C语言不同于其他编程语言的一大特性，它在进行参数传递、参数修改起着重要的作用。当我们在使用指针指代字符串字面量(string literal, 注意不是string, C语言中没有string这种类型)时， 常常会与字符数组(char array)混淆。这两者之间究竟有什么共同和不同之处，我会根据我学习C语言的一点心得举例并加以总结，不足之处请多多指教
 
 首先回顾一下C语言的内存机制(memory model):
