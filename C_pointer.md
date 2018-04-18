@@ -29,7 +29,7 @@ char b[] = "another string literal!";
 注意，如果我们不指明数组的大小(size)，系统就会按照strlen(string_literal) + 1自动在栈stack内分配空间，不需要手动添加null terminator，因为string literal自带null terminator('\0')。但如果你更改了字符数组中的字符使b表示新的字符串，不要忘记手动更改null terminator的位置，否则会导致垃圾的出现
 
 
-### 两者的共同点：
+### 两者的共同点 (The common points)：
 数组和指针均可用下标(index)来获取对应位置上的字符
 ```
 printf("equal: %d\n", a[1] == 'h');
@@ -37,7 +37,7 @@ printf("equal: %d\n", b[0] == 'a');
 ```
 两者均会打印出1
 
-### 不同点（！！！）：
+### 不同点！！！(The differenece)：
 **1.从内存的角度来说，最显著的区别，char array在栈stack内做了string literal的复制而char pointer没有**
 **2.char array不可以做字符字面量的整体更改而char pointer可以轻松的更改**
 ```
