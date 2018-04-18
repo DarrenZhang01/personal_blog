@@ -33,6 +33,7 @@ printf("equal: %d\n", a[1] == 'h');
 printf("equal: %d\n", b[0] == 'a');
 ```
 两者均会打印出1
+
 ###不同点（！！！）：
 **1.从内存的角度来说，最显著的区别，char array在栈stack内做了string literal的复制而char pointer没有**
 **2.char array不可以做字符字面量的整体更改而char pointer可以轻松的更改**
