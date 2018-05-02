@@ -37,14 +37,15 @@ public class child extends parent {
 父类与子类均不为默认构造器:
 ``` java
 public class parent{
-public parent (int m) {
-}
+    public parent (int m) {
+
+    }
 }
 
 public class child extends parent {
-public child (int m, String a) {
-    super(m);
-}
+    public child (int m, String a) {
+        super(m);
+    }
 }
 ```
 在这种情况下，子类必须重写(overwrite)或重载(override)父类的构造函数，同时必须调用父类的构造器(constructor)，因为父类不再有默认的构造器可供调用。
@@ -61,11 +62,11 @@ public child (int m, String a) {
 我们看下面这段代码：
 ``` java
 public class demo {
-public static void main (String[] args) {
-    parent p = new parent();
-    child c = new child();
-    parent pc = new child();
-}
+    public static void main (String[] args) {
+        parent p = new parent();
+        child c = new child();
+        parent pc = new child();
+    }
 }
 
 public class parent {
