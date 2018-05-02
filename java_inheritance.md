@@ -1,4 +1,4 @@
-# Java inheritance
+# java inheritance
 
 Java 继承(inheritance)是 Java 面向对象的三大重要特性之一（封装-encapsulation,   继承-inheritance,  多态-polymorphsim)   Java 继承很好的管理了具有相似特征的类之间的关系(主要集中在成员变量、方法),  使程序可扩展、易修改，并且成为java多态的基础。下面将介绍Java继承的基本语法以及特性：
 
